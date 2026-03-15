@@ -1,28 +1,28 @@
 
   import { motion } from "framer-motion";
-  // import bus from "../assets/projects/BusBooking.png"
-  // import resume from "../assets/projects/Interactive_Resume_Builder.png"
-  // import portfolio from "../assets/projects/Portfolio_website.png"
+  import bus from "../assets/projects/BusBooking.png"
+  import resume from "../assets/projects/Interactive_Resume_Builder.png"
+  import portfolio from "../assets/projects/Portfolio_website.png"
 
 const projects = [
   {
     title: "Bus Booking Website",
     desc: "Responsive bus booking platform with search and booking system.",
-    image: "/projects/BusBooking.png",
+    image: bus,
     github: "https://github.com/MADIHASYED919/online-booking",
     demo: "https://madihasyed919.github.io/online-booking/",
   },
   {
     title: "Portfolio Website",
     desc: "My portfolio website featuring my projects, skills, and journey. Built with React.js for a modern, interactive Experience",
-    image: "/projects/Portfolio_Website.png",
+    image: portfolio,
     github: "#",
     demo: "#",
   },
   {
     title: "Resume Builder",
     desc: "Allows you to build a small and Interactive Resume build",
-    image: "/projects/Interactive_Resume_Builder.png",
+    image: resume,
     github: "https://github.com/MADIHASYED919/Interactive-Resume-Builder",
     demo: "https://madihasyed919.github.io/Interactive-Resume-Builder/",
   },
