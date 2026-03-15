@@ -2,6 +2,9 @@
 
 
 import { useState } from "react";
+import { useContext } from "react";
+import  {ThemeContext}  from "../context/Themecontext";
+import ThemeToggle from "./ThemeToggle";
 // import bootstrap from "../assets/bootstrap.png";
 import { FaBars } from "react-icons/fa";
 import Logo from "./logo";
@@ -69,6 +72,7 @@ export default function Navbar() {
             <li><a href="#contact" onClick={()=>setMenuOpen(false)}>Contact</a></li>
 
           </ul>
+             <ThemeToggle />
 
         </div>
 

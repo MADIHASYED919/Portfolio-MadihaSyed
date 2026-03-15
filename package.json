@@ -1,19 +1,21 @@
 {
   "name": "portfolio-project",
-   "homepage": "https://madihasyed919.github.io/Portfolio-MadihaSyed",
+  "homepage": "https://madihasyed919.github.io/Portfolio-MadihaSyed",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-
     "lint": "eslint .",
     "preview": "vite preview",
-     "predeploy": "npm run build",
-  "deploy": "gh-pages -d dist"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/material": "^7.3.9",
     "@tailwindcss/postcss": "^4.2.1",
     "framer-motion": "^12.35.2",
     "gsap": "^3.14.2",

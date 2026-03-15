@@ -1,23 +1,12 @@
 
 import './App.css'
 import { lazy, Suspense } from "react";
-// import Skills from './components/skills'-----
-// import Loading from './components/loadingAnimation'----
-// import Hero from './components/Hero' -----
 
-
-
-// import Navbar from './components/Navbar';---
-// import About from './components/About'; -----
-// import Journey from './components/journey'----
-// import Projects from './components/projects';----
-// import BackToTop from './components/scroll'; ----
-// // import CursorGlow from './components/cursorGlow';
-// import Contact from './components/contact';-----
-// import Footer from './components/footer';
 
 const Loading = lazy(() => import("./components/loadingAnimation"));
 const Navbar = lazy(() => import("./components/Navbar"));
+const ThemeProvider = lazy(() => import("./context/Themecontext"));
+
 const About = lazy(() => import("./components/About"));
 const Journey = lazy(() => import("./components/journey"));
 const Skills = lazy(() => import("./components/skills"));
@@ -39,6 +28,7 @@ function App() {
       <Loading/>
       
         <Navbar />
+        <ThemeProvider />
        
 
     <Hero/>
@@ -81,8 +71,4 @@ function App() {
 
 export default App
 
-//  <div className="p-20 grid grid-cols-3 gap-6">
-//         <JourneyCard title="Started Coding" />
-//         <JourneyCard title="Built Projects" />
-//         <JourneyCard title="Learning MERN Stack" />
-//       </div>
+

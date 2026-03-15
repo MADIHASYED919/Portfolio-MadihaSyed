@@ -16,8 +16,8 @@ const projects = [
     title: "Portfolio Website",
     desc: "My portfolio website featuring my projects, skills, and journey. Built with React.js for a modern, interactive Experience",
     image: portfolio,
-    github: "#",
-    demo: "#",
+    github: "https://github.com/MADIHASYED919/Portfolio-MadihaSyed",
+    demo: "https://portfolio-madihasyed.vercel.app/",
   },
   {
     title: "Resume Builder",
