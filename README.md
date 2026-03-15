@@ -7,8 +7,7 @@ This project showcases my **projects, skills, education journey, and web develop
 
 ## 🚀 Live Website
 
-🔗 Portfolio Link:
-(Add your deployed website link here after deployment)
+🔗 Portfolio Link:https://portfolio-madihasyed.vercel.app/
 
 ---
 
@@ -98,7 +97,7 @@ GitHub
 https://github.com/MADIHASYED919
 
 LinkedIn
-(Add LinkedIn URL)
+https://www.linkedin.com/in/madiha-syed-b59142368/
 
 ---
 
@@ -106,4 +105,3 @@ LinkedIn
 
 If you like this project, please consider **starring the repository** ⭐
 
-It helps others discover my work.
