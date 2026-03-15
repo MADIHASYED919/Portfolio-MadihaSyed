@@ -2,7 +2,7 @@
   import { motion } from "framer-motion";
   import bus from "../assets/projects/BusBooking.png"
   import resume from "../assets/projects/Interactive_Resume_Builder.png"
-  import portfolio from "../assets/projects/Portfolio_website.png"
+  import portfolio from "../assets/projects/Portfolio_Website.png"
 
 const projects = [
   {
