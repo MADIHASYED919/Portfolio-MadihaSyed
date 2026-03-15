@@ -43,6 +43,8 @@ export default function Navbar() {
           <li><a href="#contact" className="nav-link">Contact</a></li>
 
         </ul>
+      
+<ThemeToggle />
 
         {/* Hamburger Button */}
         <button
@@ -71,7 +73,7 @@ export default function Navbar() {
             <li><a href="#contact" onClick={()=>setMenuOpen(false)}>Contact</a></li>
 
           </ul>
-             <ThemeToggle />
+            
 
         </div>
 

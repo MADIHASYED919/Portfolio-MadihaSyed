@@ -1,11 +1,11 @@
 
 import './App.css'
 import { lazy, Suspense } from "react";
-
+import ThemeProvider from "../context/ThemeContext"
 
 const Loading = lazy(() => import("./components/loadingAnimation"));
 const Navbar = lazy(() => import("./components/Navbar"));
-const ThemeProvider = lazy(() => import("./context/Themecontext"));
+
 
 const About = lazy(() => import("./components/About"));
 const Journey = lazy(() => import("./components/journey"));
@@ -25,10 +25,11 @@ function App() {
     <>
       {/* <h1 className='bg-gradient-to-r from-indigo-500 to-pink-800'>Hi!!</h1> */}
     {/* <CursorGlow/> */}
+       <ThemeProvider>
       <Loading/>
       
         <Navbar />
-        <ThemeProvider />
+      
        
 
     <Hero/>
@@ -57,6 +58,7 @@ function App() {
         
          <BackToTop />
 </Suspense>
+</ThemeProvider>
 
     
         
