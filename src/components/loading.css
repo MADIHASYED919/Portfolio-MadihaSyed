@@ -1,0 +1,100 @@
+/* 
+.loading {
+  position: fixed;
+  inset: 0;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+
+.loading-text span {
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-size: 120px;
+  color: rgba(255, 255, 255, 0.1);
+  position: relative;
+  display: inline-block;
+  opacity: 0;
+}
+
+.loading-text span::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #1DCD9F;
+  opacity: 1;
+} */
+
+
+#loading {
+  position: fixed;
+  inset: 0;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+.loading-text span{
+font-family: "Special Gothic Expanded One", sans-serif;
+font-size: clamp(40px,8vw,120px);
+color: rgba(255,255,255,0.1);
+position: relative;
+display: inline-block;
+opacity: 0;
+min-width:20px;
+animation: blink 1s ease-in-out infinite;
+}
+
+/* .loading-text span {
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-size: 120px;
+  color: rgba(255, 255, 255, 0.1);
+  position: relative;
+  display: inline-block;
+  opacity: 0;
+   min-width:20px;
+    animation: blink 1s ease-in-out infinite;
+} */
+
+
+@keyframes blink {
+
+  0%{
+    color: rgba(255,255,255,0.1);
+  }
+
+  50%{
+    color: #ffffff;
+  }
+
+  100%{
+    color: rgba(255,255,255,0.1);
+  }
+
+}
+.loading-text span:nth-child(1){ animation-delay:0s }
+.loading-text span:nth-child(2){ animation-delay:0.15s }
+.loading-text span:nth-child(3){ animation-delay:0.30s }
+.loading-text span:nth-child(4){ animation-delay:0.45s }
+.loading-text span:nth-child(5){ animation-delay:0.60s }
+.loading-text span:nth-child(6){ animation-delay:0.75s }
+.loading-text span:nth-child(7){ animation-delay:0.90s }
+.loading-text span:nth-child(8){ animation-delay:1.05s }
+.loading-text span:nth-child(9){ animation-delay:1.20s }
+.loading-text span:nth-child(10){ animation-delay:1.35s }
+.loading-text span:nth-child(11){ animation-delay:1.50s }
+.loading-text span:nth-child(12){ animation-delay:1.65s }
+
+
+.loading-text span::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #1DCD9F;
+  opacity: 0;
+}
