@@ -2,9 +2,8 @@
 
 
 import { useState } from "react";
-import { useContext } from "react";
-import  {ThemeContext}  from "../context/Themecontext";
-import ThemeToggle from "./ThemeToggle";
+
+import ThemeToggle from "./theme";
 // import bootstrap from "../assets/bootstrap.png";
 import { FaBars } from "react-icons/fa";
 import Logo from "./logo";
