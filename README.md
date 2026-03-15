@@ -87,7 +87,7 @@ npm run preview
 
 ## 📸 Portfolio Preview
 
-![Portfolio Screenshot](../assets/projects/Portfolio_Website.png)
+![Portfolio Screenshot](src/assets/projects/Portfolio_Website.png)
 
 ---
 
