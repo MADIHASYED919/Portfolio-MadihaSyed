@@ -1,0 +1,1 @@
+.nav-link{position:relative;display:inline-block;padding-bottom:4px;transition:color .3s}.nav-link:hover{color:#fff}.nav-link:after{content:"";position:absolute;left:0;bottom:0;width:0%;height:2px;background:#22c55e;box-shadow:0 0 10px #22c55e;transition:width .4s ease}.nav-link:hover:after{width:100%}
