@@ -13,7 +13,7 @@ export default function Hero() {
 
 
   return (
-    <section id="home" className="relative  min-h-screen flex justify-center items-center text-white overflow-hidden  ">
+    <section id="home" className="relative  min-h-screen flex justify-center items-center  overflow-hidden   bg-white dark:bg-black text-black dark:text-white ">
 
       {/* Particle Background */}
       <div className="absolute inset-0 z-0">

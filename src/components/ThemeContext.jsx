@@ -9,17 +9,13 @@ export default function ThemeProvider({ children }) {
     setTheme((prev) => (prev === "dark" ? "light" : "dark"));
   };
 
-  useEffect(() => {
-    if (theme === "dark") {
-      document.documentElement.classList.add("dark");
-      document.body.classList.add("bg-black", "text-white");
-      document.body.classList.remove("bg-white", "text-black");
-    } else {
-      document.documentElement.classList.remove("dark");
-      document.body.classList.add("bg-white", "text-black");
-      document.body.classList.remove("bg-black", "text-white");
-    }
-  }, [theme]);
+useEffect(() => {
+  if (theme === "dark") {
+    document.documentElement.classList.add("dark");
+  } else {
+    document.documentElement.classList.remove("dark");
+  }
+}, [theme]);
 
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>

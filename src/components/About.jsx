@@ -7,7 +7,7 @@ import developer from "../assets/developer.json";
 
 export default function About() {
   return (
-    <section id="about" className="relative min-h-screen bg-black text-white flex flex-col md:flex-row items-center justify-center px-6 md:px-16 gap-10">
+    <section id="about" className="relative min-h-screen  bg-white dark:bg-black text-black dark:text-white flex flex-col md:flex-row items-center justify-center px-6 md:px-16 gap-10">
 
     {/* <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(34,197,94,0.25),_transparent_70%)] pointer-events-none"></div> */}
 
