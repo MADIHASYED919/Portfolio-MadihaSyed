@@ -24,7 +24,7 @@ export default function Journey() {
   ];
 
   return (
-    <section id="journey" className=" relative  z-10 py-20 px-4  bg-white dark:bg-black text-black dark:text-white">
+    <section id="journey" className=" relative  z-10 bg-black text-white py-20 px-4">
 
 
  

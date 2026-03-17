@@ -2,7 +2,6 @@
 import './App.css'
 import { lazy, Suspense } from "react";
 
-import ThemeProvider from "./components/ThemeContext";
 
 const Loading = lazy(() => import("./components/loadingAnimation"));
 const Navbar = lazy(() => import("./components/Navbar"));
@@ -26,10 +25,13 @@ function App() {
     <>
       {/* <h1 className='bg-gradient-to-r from-indigo-500 to-pink-800'>Hi!!</h1> */}
     {/* <CursorGlow/> */}
-     <ThemeProvider>
-        <div className="min-h-screen bg-white text-black dark:bg-black dark:text-white transition-colors duration-500">
+     
       <Loading/>
+      
         <Navbar />
+      
+       
+
     <Hero/>
    
    <Suspense fallback={<div className="text-white text-center">Loading...</div>}>
@@ -56,8 +58,7 @@ function App() {
         
          <BackToTop />
 </Suspense>
-     </div>
-</ThemeProvider>
+
 
     
         

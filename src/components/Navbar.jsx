@@ -3,7 +3,6 @@
 
 import { useState } from "react";
 
-import ThemeToggle from "./ThemeToggle";
 
 import { FaBars } from "react-icons/fa";
 import Logo from "./logo";
@@ -43,7 +42,8 @@ export default function Navbar() {
           <li><a href="#contact" className="nav-link">Contact</a></li>
 
         </ul>
-<ThemeToggle />
+      
+
 
         {/* Hamburger Button */}
         <button

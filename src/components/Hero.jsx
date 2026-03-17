@@ -2,26 +2,20 @@
 import { motion } from "framer-motion";
 
 import { TypeAnimation } from "react-type-animation";
-import { useContext } from "react";
-import { ThemeContext } from "./ThemeContext";
 
 export default function Hero() {
 
   const particles = Array.from({ length: 200});
-  const { theme } = useContext(ThemeContext);
-  const particleColor = theme === "dark" ? "bg-white" : "bg-green-400";
-
 
   return (
-    <section id="home" className="relative  min-h-screen flex justify-center items-center  overflow-hidden   bg-white dark:bg-black text-black dark:text-white ">
+    <section id="home" className="relative  min-h-screen flex justify-center items-center text-white overflow-hidden bg-black">
 
       {/* Particle Background */}
       <div className="absolute inset-0 z-0">
         {particles.map((_, i) => (
           <motion.span
             key={i}
-         
-            className={`absolute ${particleColor} rounded-full`}
+            className="absolute bg-white rounded-full"
             style={{
               width: "4px",
               height: "4px",
@@ -84,7 +78,15 @@ export default function Hero() {
 
 </div>
 
-       
+        {/* <motion.p
+          className="text-xl text-gray-300 mt-4"
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1.2, delay: 0.3 }}
+        >
+          An aspiring Full Stack Developer passionate about building sleek web
+          experiences.
+        </motion.p> */}
 
         <motion.a
          href="https://www.linkedin.com/in/madiha-syed-b59142368"
