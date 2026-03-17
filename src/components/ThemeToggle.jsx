@@ -1,9 +1,9 @@
 import { styled } from "@mui/material/styles";
 import Switch from "@mui/material/Switch";
 import { useContext } from "react";
-import { ThemeContext } from "../context/ThemeContext";
+import { ThemeContext } from "./ThemeContext";
 
-const MaterialUISwitch = styled(Switch)(({ theme }) => ({
+const MaterialUISwitch = styled(Switch)({
   width: 62,
   height: 34,
   padding: 7,
@@ -24,9 +24,9 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
   "& .MuiSwitch-track": {
     opacity: 1,
     backgroundColor: "#aab4be",
-    borderRadius: 20 / 2,
+    borderRadius: 20,
   },
-}));
+});
 
 export default function ThemeToggle() {
   const { theme, toggleTheme } = useContext(ThemeContext);
